@@ -5,6 +5,13 @@ import java.text.DecimalFormat;
 public class CalculateDollarAmt {
 	
 	
+	/**
+	 * This method takes quantity and price per piece and calculates
+	 * the total amount
+	 * @param quantity
+	 * @param pricePerPiece
+	 * @return
+	 */
 	public String calculateAmt(Integer quantity, Double pricePerPiece)
 	{
 		DecimalFormat df = new DecimalFormat("####0.00");
