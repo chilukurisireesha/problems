@@ -9,12 +9,19 @@ public class RegexMatcher {
 	 private static final String USERNAME_PATTERN = 
 			 "^(?!.*[-_]{2,})(?=^[^-_].*[^-_]$)[\\w-]{3,9}$";
 	 
-	   private static final String INPUT = "cre-0";
+	   
 
-	   public static void main( String args[] ) {
-	      Pattern p = Pattern.compile(USERNAME_PATTERN);
-	      Matcher m = p.matcher(INPUT);   // get a matcher object
-	      System.out.println(m.matches());
-	   }
+	/**
+	 * Checks if a username follows a pattern Has to be 3 or more and 9 or less
+	 * characters can contain - and number
+	 * 
+	 * @param input
+	 * @return
+	 */
+	public boolean isUserNameValid(String input) {
+		Pattern p = Pattern.compile(USERNAME_PATTERN);
+		Matcher m = p.matcher(input); // get a matcher object
+		return m.matches();
+	}
 
 }
