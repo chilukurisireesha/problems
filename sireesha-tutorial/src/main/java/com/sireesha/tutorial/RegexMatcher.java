@@ -9,8 +9,8 @@ public class RegexMatcher {
 	 private static final String USERNAME_PATTERN = 
 			 "^(?!.*[-_]{2,})(?=^[^-_].*[^-_]$)[\\w-]{3,9}$";
 	 
-	   
-
+ 
+	 
 	/**
 	 * Checks if a username follows a pattern Has to be 3 or more and 9 or less
 	 * characters can contain - and number
